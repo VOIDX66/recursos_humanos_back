@@ -1,0 +1,10 @@
+[package]
+name = "recursos_humanos_back"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.0"           # Servidor web
+dotenv = "0.15"             # Para leer el archivo .env
+diesel = { version = "2.0", features = ["postgres"] }  # ORM para PostgreSQL
+tokio = { version = "1", features = ["full"] }  # Necesario para el async runtime
